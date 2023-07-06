@@ -112,6 +112,10 @@ a:focus {
   background-color: #00c6a9;
 }
 
+.header_bottom {
+  margin-bottom: 40px;
+}
+
 .header_section .header_bottom .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
@@ -121,6 +125,7 @@ a:focus {
   background-color: #ffffff;
   padding: 15px 35px;
 }
+
 
 .navbar-brand img {
   width: 55px;
@@ -428,7 +433,7 @@ a:focus {
 
 .slider_section .carousel_btn-box {
   position: absolute;
-  bottom: 0;
+  bottom: -80px;
   right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1133,5 +1138,5 @@ a:focus {
 
 
 .new_img {
-  height: 508px;
+  height: 500px;
 }
