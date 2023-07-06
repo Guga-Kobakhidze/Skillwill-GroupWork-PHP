@@ -10,35 +10,8 @@
     <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <?php
-      $carouselCount = count($carousels[0]['title']);
-      for ($i = 0; $i < $carouselCount; $i++) {
-        $carouselClass = ($i == 0) ? 'carousel-item active' : 'carousel-item';
-        $carousel = $carousels[0];
-        echo '<div class="' . $carouselClass . '">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="detail-box">
-                                    <div class="play_btn">
-                                        <button>
-                                            <i class="fa fa-play" aria-hidden="true"></i>
-                                        </button>
-                                    </div>
-                                    <h1>' . $carousel['title'][$i] . '<br><span>' . $carousel['prof'][$i] . '</span></h1>
-                                    <p>' . $carousel['text'][$i] . '</p>
-                                    <a href="./contact.php">' . $carousel['link'][$i] . '</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="img-box">
-                                    <img class="new_img" src="' . $carousel['img'][$i] . '" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>';
-      }
-      ?>
+            getCarousels($carousels);
+            ?>
         </div>
         <div class="carousel_btn-box">
             <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">

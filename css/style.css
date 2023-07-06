@@ -433,7 +433,7 @@ a:focus {
 
 .slider_section .carousel_btn-box {
   position: absolute;
-  bottom: -80px;
+  bottom: -50px;
   right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
