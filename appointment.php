@@ -4,8 +4,8 @@
     <div class="contact_form-s" style="width: 500px; height: 450px; display: flex; flex-direction: column;
      justify-content: center; align-items: center; text-align: center;
      padding: 40px; box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.07);">
-        <?php
 
+        <?php
         if ($_GET['name'] && $_GET['number'] && $_GET['text']) {
             echo '<h1> Hello ' . $_GET['name'] . ' <br><br>  Number - ' . $_GET['number'] . ' </h1>';
             echo '<h1> Your reservation has been accepted </h1> ';

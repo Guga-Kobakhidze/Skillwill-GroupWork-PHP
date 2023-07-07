@@ -1,3 +1,5 @@
+<!-- Teo -->
+
 <section class="contact_section layout_padding-bottom">
     <div class="container">
         <div class="heading_container">
@@ -8,7 +10,7 @@
         <div class="row">
             <div class="col-md-7">
                 <div class="form_container">
-                    <form action="">
+                    <form action="" method="">
                         <div>
                             <input type="text" placeholder="Full Name" />
                         </div>
