@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form action="./contact.php" method="GET">
+                <form action="./appointment.php" method="GET">
                     <h4>
                         BOOK <span>APPOINTMENT</span>
                     </h4>
