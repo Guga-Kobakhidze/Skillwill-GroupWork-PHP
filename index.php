@@ -1,7 +1,7 @@
 <?php include_once "./header.php" ?>
 <!-- end header section -->
-<?php include "./variables.php" ?>
-<?php include "./functions.php" ?>
+<?php include "./variables/variables.php" ?>
+<?php include "./variables/functions.php" ?>
 <!-- slider section -->
 <section class="slider_section ">
     <div class="dot_design">
@@ -30,36 +30,36 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form>
+                <form action="./contact.php" method="GET">
                     <h4>
                         BOOK <span>APPOINTMENT</span>
                     </h4>
                     <div class="form-row ">
                         <div class="form-group col-lg-4">
                             <label for="inputPatientName">Patient Name </label>
-                            <input type="text" class="form-control" id="inputPatientName" placeholder="">
+                            <input name="name" type="text" class="form-control" id="inputPatientName" placeholder="">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="inputDoctorName">Doctor's Name</label>
-                            <select name="Dname" class="form-control wide" id="inputDoctorName">
-                                <?php getCombineLable($doctorName, []) ?>
+                            <select name="Doname" class="form-control wide" id="inputDoctorName">
+                                <?php getCombineLable($doctorName) ?>
                             </select>
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="inputDepartmentName">Department's Name</label>
-                            <select name="Dname" class="form-control wide" id="inputDepartmentName">
-                                <?php getCombineLable($departmentName, []) ?>
+                            <select name="Dename" class="form-control wide" id="inputDepartmentName">
+                                <?php getCombineLable($departmentName) ?>
                             </select>
                         </div>
                     </div>
                     <div class="form-row ">
                         <div class="form-group col-lg-4">
                             <label for="inputPhone">Phone Number</label>
-                            <input type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
+                            <input name="number" type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="inputSymptoms">Symptoms</label>
-                            <input type="text" class="form-control" id="inputSymptoms" placeholder="">
+                            <input name="text" type="text" class="form-control" id="inputSymptoms" placeholder="">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="inputDate">Choose Date </label>

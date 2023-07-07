@@ -68,11 +68,9 @@ function getCarousels($carousels)
 $doctorName = ['Steven Moffat', 'Jenny Flint', 'Catrin Stewart', 'Richard E. Grant',];
 $departmentName = ['Medical Department', 'Rehabilitation Department', 'Radiology Department', 'Outpatient Department',];
 
-function getCombineLable($doctorName, $departmentName)
+function getCombineLable($names)
 {
-    $combineName = array_merge($doctorName, $departmentName);
-    for ($i = 0; $i < sizeof($combineName); $i++) {
-        echo '<option value="Normal distribution ">' . $combineName[$i] . '</option>';
+    foreach ($names as $name) {
+        echo '<option value="' . $name . '">' . $name . '</option>';
     }
-    return $combineName;
 }
