@@ -114,6 +114,7 @@ $testimonialcarousel = [
 
     ],
 ];
+
 function getTestimonial($testimonialcarousel)
 {
     for ($i = 0; $i < sizeof($testimonialcarousel); $i++) {
@@ -137,8 +138,6 @@ function getTestimonial($testimonialcarousel)
     };
     return $testimonialcarousel;
 }
-
-
 
 /* function 4 */
 
@@ -226,5 +225,6 @@ function makeTreatments()
          </div>
      </div>
  </div>';
+
     }
 }
