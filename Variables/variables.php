@@ -25,3 +25,11 @@ $icons = [
     '<i class="fa fa-facebook" aria-hidden="true"></i>', '<i class="fa fa-twitter" aria-hidden="true"></i>',
     '<i class="fa fa-linkedin" aria-hidden="true"></i>', '<i class="fa fa-instagram" aria-hidden="true"></i>',
 ];
+   $menuItems = [
+        ["name" => "Home", "link" => "index.php"],
+        ["name" => "About", "link" => "about.php"],
+        ["name" => "Treatment", "link" => "treatment.php"],
+        ["name" => "Doctors", "link" => "doctor.php"],
+        ["name" => "Testimonial", "link" => "testimonial.php"],
+        ["name" => "Contact Us", "link" => "contact.php"]
+    ];
