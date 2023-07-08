@@ -1,6 +1,4 @@
  <!-- Luka -->
-<?php include_once "./header.php" ?>
-<?php include "./variables/functions.php" ?>
 
  <section class="treatment_section layout_padding">
      <div class="side_img">
@@ -13,11 +11,9 @@
              </h2>
          </div>
          <div class="row">
-            <?php
-            makeTreatments();
-            ?>
+             <?php
+                makeTreatments();
+                ?>
          </div>
      </div>
  </section>
-
- <?php include_once "./footer.php" ?>
