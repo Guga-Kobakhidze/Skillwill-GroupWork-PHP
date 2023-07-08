@@ -91,9 +91,9 @@
                          <h5>
                              LATEST POSTS
                          </h5>
-                         <?php 
-                          getMergeFooter($footer1, []);
-                         ?>
+                         <?php
+                            getMergeFooter($footer1, []);
+                            ?>
                      </div>
                  </div>
                  <div class="col-md-6 col-lg-3">
@@ -101,9 +101,9 @@
                          <h5>
                              News
                          </h5>
-                         <?php 
-                          getMergeFooter($footer1, []);
-                         ?>
+                         <?php
+                            getMergeFooter($footer2, []);
+                            ?>
                      </div>
                  </div>
              </div>
@@ -128,8 +128,7 @@
  <!-- bootstrap js -->
  <script src="js/bootstrap.js"></script>
  <!-- nice select -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
-     integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
  <!-- owl slider -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
  <!-- datepicker -->

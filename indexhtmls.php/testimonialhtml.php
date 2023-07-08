@@ -13,8 +13,8 @@
          <div id="customCarousel2" class="carousel  carousel-fade" data-ride="carousel">
              <div class="carousel-inner">
                  <?php
-                 getTestimonial ($testimonialcarousel); 
-                 ?>
+                    getTestimonial($testimonialcarousel);
+                    ?>
              </div>
              <div class="carousel_btn-box">
                  <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
