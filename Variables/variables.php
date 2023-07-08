@@ -39,6 +39,18 @@ $icons = [
         $isActive = isCurrentPage($item['link']) ? 'active' : '';
         echo '<a href="' . $item['link'] . '" class="' . $isActive . '">' . $item['name'] . '</a>';
     }
+
+    $socialMediaLinks = [
+        ["icon" => "fa fa-facebook", "link" => "https://www.facebook.com/"],
+        ["icon" => "fa fa-twitter", "link" => "https://www.twitter.com/"],
+        ["icon" => "fa fa-linkedin", "link" => "https://www.linkedin.com/"],
+        ["icon" => "fa fa-instagram", "link" => "https://www.instagram.com/"]
+    ];
+
+    foreach ($socialMediaLinks as $socialLink) {
+        echo '<a href="' . $socialLink['link'] . '"><i class="' . $socialLink['icon'] . '" aria-hidden="true"></i></a>';
+    }
+
     ?>
 
 
