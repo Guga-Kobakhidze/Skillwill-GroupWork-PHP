@@ -1,5 +1,4 @@
 <!-- Teo -->
-
 <section class="contact_section layout_padding-bottom">
     <div class="container">
         <div class="heading_container">
@@ -10,18 +9,18 @@
         <div class="row">
             <div class="col-md-7">
                 <div class="form_container">
-                    <form action="" method="">
+                    <form action="./Variables/contact-form.php" method="GET">
                         <div>
-                            <input type="text" placeholder="Full Name" />
+                            <input type="text" placeholder="Full Name" name="FullName"/>
                         </div>
                         <div>
-                            <input type="email" placeholder="Email" />
+                            <input type="email" placeholder="Email" name="Email"/>
                         </div>
                         <div>
-                            <input type="text" placeholder="Phone Number" />
+                            <input type="text" placeholder="Phone Number" name="PhoneNumber" />
                         </div>
                         <div>
-                            <input type="text" class="message-box" placeholder="Message" />
+                            <input type="text" class="message-box" placeholder="Message" name="Message"/>
                         </div>
                         <div class="btn_box">
                             <button>
