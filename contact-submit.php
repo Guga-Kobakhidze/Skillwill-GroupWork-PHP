@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-md-7">
                 <div class="form_container">
-                    <form id="contactForm" action="submit_form.php" method="POST">
+                    <form id="contactForm" action="index.php" method="POST">
                         <div>
                             <input type="text" name="fullName" placeholder="Full Name" />
                         </div>
@@ -24,7 +24,10 @@
                             <textarea name="message" class="message-box" placeholder="Message"></textarea>
                         </div>
                         <div class="btn_box">
-                            <button type="submit" name="submit">SEND</button>
+                            <button actiontype="submit"
+                            style="margin-top:20px; padding: 10px; border-radius: 20px; 
+            border: 1px solid #00c6a9;
+            background: #00c6a9; cursor: pointer;" >send </button>
                         </div>
                     </form>
                 </div>
