@@ -1,6 +1,7 @@
  <!-- Giorgi -->
  <?php include "./Variables/variables.php" ?>
 
+
  <section class="info_section ">
      <div class="container">
          <div class="info_top">

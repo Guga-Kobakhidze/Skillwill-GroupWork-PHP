@@ -1,7 +1,8 @@
 <?php include_once "./header.php" ?>
+
 <!-- end header section -->
 <?php include "./variables/variables.php" ?>
-<?php include "./variables/functions.php" ?>
+
 <!-- slider section -->
 <section class="slider_section ">
     <div class="dot_design">
@@ -23,8 +24,9 @@
         </div>
     </div>
 </section>
-<!-- end slider section -->
 </div>
+<!-- end slider section -->
+
 <!-- book section -->
 <section class="book_section layout_padding">
     <div class="container">
@@ -55,7 +57,8 @@
                     <div class="form-row ">
                         <div class="form-group col-lg-4">
                             <label for="inputPhone">Phone Number</label>
-                            <input name="number" type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
+                            <input name="number" type="number" class="form-control" id="inputPhone"
+                                placeholder="XXXXXXXXXX">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="inputSymptoms">Symptoms</label>
@@ -101,6 +104,5 @@
 <?php include_once "./indexhtmls.php/contacthtml.php" ?>
 <!-- end contact section -->
 
-<!-- info section -->
 <!-- footer section -->
 <?php include_once "./footer.php" ?>

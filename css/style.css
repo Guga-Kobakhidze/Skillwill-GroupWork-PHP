@@ -29,6 +29,10 @@ body {
   padding-bottom: 90px;
 }
 
+.testimonial-carousel {
+  height: 250px;
+}
+
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
