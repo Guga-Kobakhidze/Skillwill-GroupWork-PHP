@@ -202,6 +202,7 @@ $treatments =   [
     'href' => ['', '', '', '']
 ];
 
+
 function makeTreatments()
 {
     global $treatments;
@@ -224,5 +225,31 @@ function makeTreatments()
          </div>
      </div>
  </div>';
+    }
+}
+
+
+$navheader = [
+    'href' => [
+        'index.php', 'about.php', 'treatment.php', 'doctor.php', 'testimonial.php', 'contact.php'
+    ],
+    'name' => [
+        'Home', 'About', 'Treatment', 'Doctors', 'Testimonial', 'Contact Us'
+    ]
+];
+
+
+function makenav()
+{
+    global $navheader;
+    for ($i = 0; $i < sizeof($navheader['name']); $i++) {
+        if ($i == 0) {
+            $liclass = 'nav-item active';
+        } else {
+            $liclass = 'nav-item';
+        }
+        echo '<li class="' . $liclass . '">
+                <a class="nav-link" href="' . $navheader['href'][$i] . '">' . $navheader['name'][$i] . '</a>
+              </li>';
     }
 }

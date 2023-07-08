@@ -1,4 +1,3 @@
-<?php include "./variables/functions.php" ?>
 <?php include_once "./header.php" ?>
 <!-- end header section -->
 
