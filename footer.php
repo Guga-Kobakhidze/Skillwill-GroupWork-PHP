@@ -91,24 +91,9 @@
                          <h5>
                              LATEST POSTS
                          </h5>
-                         <div class="post_box">
-                             <div class="img-box">
-                                 <img src="images/post1.jpg" alt="">
-                             </div>
-                             <p>
-                                 Normal
-                                 distribution
-                             </p>
-                         </div>
-                         <div class="post_box">
-                             <div class="img-box">
-                                 <img src="images/post2.jpg" alt="">
-                             </div>
-                             <p>
-                                 Normal
-                                 distribution
-                             </p>
-                         </div>
+                         <?php 
+                          getMergeFooter($footer1, []);
+                         ?>
                      </div>
                  </div>
                  <div class="col-md-6 col-lg-3">
@@ -116,24 +101,9 @@
                          <h5>
                              News
                          </h5>
-                         <div class="post_box">
-                             <div class="img-box">
-                                 <img src="images/post3.jpg" alt="">
-                             </div>
-                             <p>
-                                 Normal
-                                 distribution
-                             </p>
-                         </div>
-                         <div class="post_box">
-                             <div class="img-box">
-                                 <img src="images/post4.png" alt="">
-                             </div>
-                             <p>
-                                 Normal
-                                 distribution
-                             </p>
-                         </div>
+                         <?php 
+                          getMergeFooter($footer1, []);
+                         ?>
                      </div>
                  </div>
              </div>
