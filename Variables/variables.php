@@ -1,5 +1,7 @@
 <?php
 
+/// --- Teo
+
 $teamMembers = [
     [
         'name' => 'Hennry',
@@ -23,7 +25,10 @@ $icons = [
     '<i class="fa fa-facebook" aria-hidden="true"></i>', '<i class="fa fa-twitter" aria-hidden="true"></i>',
     '<i class="fa fa-linkedin" aria-hidden="true"></i>', '<i class="fa fa-instagram" aria-hidden="true"></i>',
 ];
-   $menuItems = [
+
+
+    $menuItems = [
+
         ["name" => "Home", "link" => "index.php"],
         ["name" => "About", "link" => "about.php"],
         ["name" => "Treatment", "link" => "treatment.php"],
@@ -31,9 +36,31 @@ $icons = [
         ["name" => "Testimonial", "link" => "testimonial.php"],
         ["name" => "Contact Us", "link" => "contact.php"]
     ];
+
     $socialLinks = [
         ["icon" => "fa fa-facebook", "link" => "https://www.facebook.com"],
         ["icon" => "fa fa-twitter", "link" => "https://www.twitter.com"],
         ["icon" => "fa fa-linkedin", "link" => "https://www.linkedin.com"],
         ["icon" => "fa fa-instagram", "link" => "https://www.instagram.com"]
     ];
+
+    foreach ($menuItems as $item) {
+        $isActive = isCurrentPage($item['link']) ? 'active' : '';
+        echo '<a href="' . $item['link'] . '" class="' . $isActive . '">' . $item['name'] . '</a>';
+    }
+
+    $socialMediaLinks = [
+        ["icon" => "fa fa-facebook", "link" => "https://www.facebook.com/"],
+        ["icon" => "fa fa-twitter", "link" => "https://www.twitter.com/"],
+        ["icon" => "fa fa-linkedin", "link" => "https://www.linkedin.com/"],
+        ["icon" => "fa fa-instagram", "link" => "https://www.instagram.com/"]
+    ];
+
+    foreach ($socialMediaLinks as $socialLink) {
+        echo '<a href="' . $socialLink['link'] . '"><i class="' . $socialLink['icon'] . '" aria-hidden="true"></i></a>';
+    }
+
+    ?>
+
+
+
