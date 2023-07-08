@@ -27,40 +27,32 @@ $icons = [
 ];
 
 
-    $menuItems = [
+//---> For footer
 
-        ["name" => "Home", "link" => "index.php"],
-        ["name" => "About", "link" => "about.php"],
-        ["name" => "Treatment", "link" => "treatment.php"],
-        ["name" => "Doctors", "link" => "doctor.php"],
-        ["name" => "Testimonial", "link" => "testimonial.php"],
-        ["name" => "Contact Us", "link" => "contact.php"]
-    ];
+$menuItems = [
 
-    $socialLinks = [
-        ["icon" => "fa fa-facebook", "link" => "https://www.facebook.com"],
-        ["icon" => "fa fa-twitter", "link" => "https://www.twitter.com"],
-        ["icon" => "fa fa-linkedin", "link" => "https://www.linkedin.com"],
-        ["icon" => "fa fa-instagram", "link" => "https://www.instagram.com"]
-    ];
-
-    foreach ($menuItems as $item) {
-        $isActive = isCurrentPage($item['link']) ? 'active' : '';
-        echo '<a href="' . $item['link'] . '" class="' . $isActive . '">' . $item['name'] . '</a>';
-    }
-
-    $socialMediaLinks = [
-        ["icon" => "fa fa-facebook", "link" => "https://www.facebook.com/"],
-        ["icon" => "fa fa-twitter", "link" => "https://www.twitter.com/"],
-        ["icon" => "fa fa-linkedin", "link" => "https://www.linkedin.com/"],
-        ["icon" => "fa fa-instagram", "link" => "https://www.instagram.com/"]
-    ];
-
-    foreach ($socialMediaLinks as $socialLink) {
-        echo '<a href="' . $socialLink['link'] . '"><i class="' . $socialLink['icon'] . '" aria-hidden="true"></i></a>';
-    }
-
-    ?>
+    ["name" => "Home", "link" => "index.php"],
+    ["name" => "About", "link" => "about.php"],
+    ["name" => "Treatment", "link" => "treatment.php"],
+    ["name" => "Doctors", "link" => "doctor.php"],
+    ["name" => "Testimonial", "link" => "testimonial.php"],
+    ["name" => "Contact Us", "link" => "contact.php"]
+];
 
 
+$socialMediaLinks = [
+    ["icon" => "fa fa-facebook", "link" => "https://www.facebook.com/"],
+    ["icon" => "fa fa-twitter", "link" => "https://www.twitter.com/"],
+    ["icon" => "fa fa-linkedin", "link" => "https://www.linkedin.com/"],
+    ["icon" => "fa fa-instagram", "link" => "https://www.instagram.com/"]
+];
 
+
+$contactInfo = [
+    'icons' => [
+        '<i class="fa fa-map-marker" aria-hidden="true"></i>',
+        '<i class="fa fa-phone" aria-hidden="true"></i>',
+        '<i class="fa fa-envelope"></i>'
+    ],
+    'span' =>  ['Location', 'Call +01 1234567890', 'demo@gmail.com'],
+];
