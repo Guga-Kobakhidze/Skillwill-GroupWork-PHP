@@ -9,27 +9,26 @@ $carousels = [
         'title' =>  ['Mico', 'Mico', 'Mico'],
         'prof'  =>  ['Nurse', 'Hospital', 'Ultrasound'],
         'text'  =>  [
-            ' consectetur adipisicing elit. Eius illum, laboriosam
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as opposed to.',
+            'consectetur adipisicing elit. Eius illum, laboriosam
+                      when looking at its layout. The point of using Lorem Ipsum is that it has a
+                      more-or-less normal distribution of letters, as opposed to.',
             'when looking at its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as opposed to, Lorem ipsum dolor sit
-                    amet,
-                    consectetur adipisicing elit. Eius illum, laboriosam.',
+                      more-or-less normal distribution of letters, as opposed to, Lorem ipsum dolor sit
+                      amet,
+                      consectetur adipisicing elit. Eius illum, laboriosam.',
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius illum,
-                    laboriosam labore quo reprehenderit tenetur. Inventore, nostrum! Nam obcaecati
-                    quo placeat consequatur minima, maiores natus cumque, totam nihil, dignissimos
-                    ipsam.'
+                      laboriosam labore quo reprehenderit tenetur. Inventore, nostrum! Nam obcaecati
+                      quo placeat consequatur minima, maiores natus cumque, totam nihil, dignissimos
+                      ipsam.'
         ],
         'link'  =>  ['Contact Us', 'Contact Us', 'Contact Us',],
         'img'   =>  ['images/slider-img.jpg', 'images/hospital.jpg', 'images/hospitalpeople.jpg'],
-    ]
+    ],
 ];
 
 function getCarousels($carousels)
 {
-    $carouselCount = count($carousels[0]['title']);
-    for ($i = 0; $i < $carouselCount; $i++) {
+    for ($i = 0; $i < count($carousels[0]['title']); $i++) {
         $carousel = $carousels[0];
         if ($i == 0) {
             $carouselClass = 'carousel-item active';
@@ -75,10 +74,31 @@ function getCombineLable($names)
     }
 }
 
+// ---> function 3
+
+$inputs = [
+    'input' => [
+        '<input type="text" placeholder="Full Name" name="FullName" required />',
+        '<input type="email" placeholder="Email" name="Email" />',
+        '<input type="number" placeholder="Phone Number" name="PhoneNumber" />',
+        '<input type="text" class="message-box" placeholder="Message" name="Message" />',
+    ],
+];
+
+function getInputs($inputs)
+{
+    $i = 0;
+    do {
+        echo '<div> ' . $inputs['input'][$i] . ' </div>';
+        $i++;
+    } while ($i < sizeof($inputs['input']));
+    return $inputs;
+}
+
 
 /// ---> giorgi 
 
-// ---> function 3 
+// ---> function 4
 
 $testimonialcarousel = [
     [
@@ -89,27 +109,24 @@ $testimonialcarousel = [
                    default model text, and a search for lorem ipsum will uncover many web sites still in
                    their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search
                    for lorem ipsum will uncover many web sites still in their infancy. Various',
-
     ],
     [
         'main-title' => 'Rochak',
         'title' => 'Default model text',
         'text' => 'Variouseditors now use Lorem Ipsum as their default model text, and a search for lorem
-                  ipsum will uncover many web sites still in their infancy. Variouseditors now use Lorem
-                  Ipsum as their default model text, and a search for lorem ipsum will uncover many web
-                  sites still in their infancy. editors now use Lorem Ipsum as their default model text, and
-                  a search for lorem ipsum will uncover many web sites still in their infancy.',
-
+                   ipsum will uncover many web sites still in their infancy. Variouseditors now use Lorem
+                   Ipsum as their default model text, and a search for lorem ipsum will uncover many web
+                   sites still in their infancy. editors now use Lorem Ipsum as their default model text, and
+                   a search for lorem ipsum will uncover many web sites still in their infancy.',
     ],
     [
         'main-title' => 'Brad Johns',
         'title' => 'Default model text',
         'text' => 'Variouseditors now use Lorem Ipsum as their default model text, and a search for lorem
-                  ipsum will uncover many web sites still in their infancy, editors now use Lorem Ipsum as
-                  their default model text, and a search for lorem ipsum will uncover many web sites still
-                  in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a
-                  search for lorem ipsum will uncover many web sites still in their infancy. Various',
-
+                   ipsum will uncover many web sites still in their infancy, editors now use Lorem Ipsum as
+                   their default model text, and a search for lorem ipsum will uncover many web sites still
+                   in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a
+                   search for lorem ipsum will uncover many web sites still in their infancy. Various',
     ],
 ];
 
@@ -137,18 +154,14 @@ function getTestimonial($testimonialcarousel)
     return $testimonialcarousel;
 }
 
-
-
-/* function 4 */
+// ---> function 5
 
 $footer1 = [
     [
-
         'image' => 'images/post1.jpg',
         'text' =>  'Normal distribution',
     ],
     [
-
         'image' => 'images/post2.jpg',
         'text' =>  'Normal distribution',
     ],
@@ -157,12 +170,10 @@ $footer1 = [
 
 $footer2 = [
     [
-
         'image' => 'images/post3.jpg',
         'text' =>  'Normal distribution',
     ],
     [
-
         'image' => 'images/post4.png',
         'text' =>  'Normal distribution',
     ],
@@ -179,19 +190,21 @@ function getMergeFooter($footer1, $footer2)
             </div>
                  <p> ' . $mergeFooter[$i]['text'] . ' </p>
             </div>';
-    };
+    }
     return $mergeFooter;
 }
 
 
 //// --->> luka
 
+// ---> function 6
+
 $treatments =   [
     'imgsrc' => [
-        '"images/t1.png"', "images/t2.png", "images/t3.png", "images/t4.png"
+        '"images/t1.png"', "images/t2.png", "images/t3.png", "images/t4.png",
     ],
     'h4' => [
-        'Nephrologist care', 'Eye Care', 'Pediatrician Clinic', 'Parental Care'
+        'Nephrologist care', 'Eye Care', 'Pediatrician Clinic', 'Parental Care',
     ],
     'p' =>  [
         "alteration in some form, by injected humour, or randomised words which dont look even slightly e sure there isn't anything",
@@ -199,35 +212,29 @@ $treatments =   [
         "alteration in some form, by injected humour, or randomised words which dont look even slightly e sure there isn't anything",
         "alteration in some form, by injected humour, or randomised words which dont look even slightly e sure there isn't anything",
     ],
-    'href' => ['', '', '', '']
+    'href' => ['Read More', 'Read More', 'Read More', 'Read More'],
 ];
-
 
 function makeTreatments()
 {
     global $treatments;
     for ($i = 0; $i < sizeof($treatments); $i++) {
         echo    '<div class="col-md-6 col-lg-3">
-        <div class="box ">
-            <div class="img-box">
-               <img src= ' . $treatments['imgsrc'][$i] . ' alt="">
-            </div>
-            <div class="detail-box">
-                <h4>
-                    ' . $treatments['h4'][$i] . '
-                </h4>
-                <p>
-                    ' . $treatments['p'][$i] . '
-                </p>
-                <a href="' . $treatments['href'][$i] . '">
-                    Read More
-                </a>
-         </div>
-     </div>
- </div>';
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src= ' . $treatments['imgsrc'][$i] . ' alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h4> ' . $treatments['h4'][$i] . ' </h4>
+                            <p> ' . $treatments['p'][$i] . ' </p>
+                            <a href=""> ' . $treatments['href'][$i] . ' </a>
+                        </div>
+                    </div>
+                </div>';
     }
 }
 
+// ---> function 7
 
 $navheader = [
     'href' => [
@@ -235,7 +242,7 @@ $navheader = [
     ],
     'name' => [
         'Home', 'About', 'Treatment', 'Doctors', 'Testimonial', 'Contact Us'
-    ]
+    ],
 ];
 
 

@@ -1,3 +1,5 @@
+<!-- Guga -->
+
 <html>
 
 <body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
@@ -6,7 +8,6 @@
      padding: 40px; box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.07);">
 
         <?php
-
         switch ($_GET) {
             case ($_GET['name'] && $_GET['number'] && $_GET['text']):
                 echo '<h1> Hello ' . $_GET['name'] . ' <br><br>  Number - ' . $_GET['number'] . ' </h1>';
@@ -35,8 +36,7 @@
         <form action="../index.php">
             <button type="submit" style="margin-top:20px; padding: 10px; border-radius: 10px; 
             border: 1px solid #00c6a9;
-            background: #00c6a9; cursor: pointer;">
-                Go to the main </button>
+            background: #00c6a9; cursor: pointer;"> Go to the main </button>
         </form>
 
     </div>

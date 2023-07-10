@@ -18,8 +18,7 @@
          <form action="../contact.php">
              <button type="submit" style="margin-top:20px; padding: 10px; border-radius: 10px; 
             border: 1px solid #00c6a9;
-            background: #00c6a9; cursor: pointer;">
-                 Go to the Contact us </button>
+            background: #00c6a9; cursor: pointer;"> Go to the Contact us </button>
          </form>
 
      </div>

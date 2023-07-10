@@ -6,14 +6,10 @@
      </div>
      <div class="container">
          <div class="heading_container heading_center">
-             <h2>
-                 Hospital <span>Treatment</span>
-             </h2>
+             <h2> Hospital <span>Treatment </span> </h2>
          </div>
          <div class="row">
-             <?php
-                makeTreatments();
-                ?>
+             <?php makeTreatments(); ?>
          </div>
      </div>
  </section>

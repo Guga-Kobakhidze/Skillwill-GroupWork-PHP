@@ -7,28 +7,22 @@
          <div class="info_top">
              <div class="info_logo">
                  <a href="">
-                     <img src="images/logo.png" alt="">
-                 </a>
+                     <img src="images/logo.png" alt=""></a>
              </div>
              <div class="info_form">
                  <form action="">
                      <input type="email" placeholder="Your email">
-                     <button>
-                         Subscribe
-                     </button>
+                     <button> Subscribe </button>
                  </form>
              </div>
          </div>
          <div class="info_bottom layout_padding2">
              <div class="row info_main_row">
                  <div class="col-md-6 col-lg-3">
-                     <h5>
-                         Address
-                     </h5>
+                     <h5> Address </h5>
                      <div class="info_contact">
                          <?php
                             $i = 0;
-
                             while ($i <= sizeof($contactInfo)) {
                                 echo '<a href="">
                                 ' . $contactInfo['icons'][$i] . '
@@ -50,9 +44,7 @@
                  </div>
                  <div class="col-md-6 col-lg-3">
                      <div class="info_links">
-                         <h5>
-                             Useful link
-                         </h5>
+                         <h5> Useful link </h5>
                          <div class="info_links_menu">
                              <?php
                                 foreach ($menuItems as $item) {
@@ -70,9 +62,7 @@
                  </div>
                  <div class="col-md-6 col-lg-3">
                      <div class="info_post">
-                         <h5>
-                             LATEST POSTS
-                         </h5>
+                         <h5> LATEST POSTS </h5>
                          <?php
                             getMergeFooter($footer1, []);
                             ?>
@@ -80,9 +70,7 @@
                  </div>
                  <div class="col-md-6 col-lg-3">
                      <div class="info_post">
-                         <h5>
-                             News
-                         </h5>
+                         <h5> News </h5>
                          <?php
                             getMergeFooter($footer2, []);
                             ?>
@@ -97,8 +85,7 @@
  <!-- footer section -->
  <footer class="footer_section">
      <div class="container">
-         <p>
-             &copy; <span id="displayYear"></span> All Rights Reserved By
+         <p> &copy; <span id="displayYear"></span> All Rights Reserved By
              <a href="https://html.design/">Free Html Templates</a>
          </p>
      </div>

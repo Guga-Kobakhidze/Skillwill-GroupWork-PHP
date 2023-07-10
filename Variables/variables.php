@@ -1,6 +1,6 @@
 <?php
 
-/// --- Teo
+/// ---> Teo
 
 $teamMembers = [
     [
@@ -26,7 +26,6 @@ $icons = [
     '<i class="fa fa-linkedin" aria-hidden="true"></i>', '<i class="fa fa-instagram" aria-hidden="true"></i>',
 ];
 
-
 //---> For footer
 
 $menuItems = [
@@ -36,17 +35,15 @@ $menuItems = [
     ["name" => "Treatment", "link" => "treatment.php"],
     ["name" => "Doctors", "link" => "doctor.php"],
     ["name" => "Testimonial", "link" => "testimonial.php"],
-    ["name" => "Contact Us", "link" => "contact.php"]
+    ["name" => "Contact Us", "link" => "contact.php"],
 ];
-
 
 $socialMediaLinks = [
     ["icon" => "fa fa-facebook", "link" => "https://www.facebook.com/"],
     ["icon" => "fa fa-twitter", "link" => "https://www.twitter.com/"],
     ["icon" => "fa fa-linkedin", "link" => "https://www.linkedin.com/"],
-    ["icon" => "fa fa-instagram", "link" => "https://www.instagram.com/"]
+    ["icon" => "fa fa-instagram", "link" => "https://www.instagram.com/"],
 ];
-
 
 $contactInfo = [
     'icons' => [
@@ -55,4 +52,21 @@ $contactInfo = [
         '<i class="fa fa-envelope"></i>'
     ],
     'span' =>  ['Location', 'Call +01 1234567890', 'demo@gmail.com'],
+];
+
+//---> For header 
+
+$navContacts = [
+    [
+        'icon' => '<i class="fa fa-phone" aria-hidden="true"></i>',
+        'contact' => 'Call : +01 123455678990'
+    ],
+    [
+        'icon' => '<i class="fa fa-envelope" aria-hidden="true"></i>',
+        'contact' => 'Email : demo@gmail.com'
+    ],
+    [
+        'icon' => '<i class="fa fa-map-marker" aria-hidden="true"></i>',
+        'contact' => 'Location'
+    ],
 ];
