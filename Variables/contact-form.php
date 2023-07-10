@@ -1,9 +1,11 @@
  <!-- Luka, Teo, Giorgi  -->
 
- <body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-     <div class="contact_form-s" style="width: 500px; height: 450px; display: flex; flex-direction: column;
-     justify-content: center; align-items: center; text-align: center;
-     padding: 40px; box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.07);">
+
+ <html>
+ <link rel="stylesheet" href="variables.css">
+
+ <body class="variables_body ">
+     <div class="contact_form-s">
 
          <?php
             if ($_GET['FullName'] && $_GET['Email'] && $_GET['PhoneNumber'] && $_GET['Message']) {
@@ -16,9 +18,9 @@
             ?>
 
          <form action="../contact.php">
-             <button type="submit" style="margin-top:20px; padding: 10px; border-radius: 10px; 
-            border: 1px solid #00c6a9;
-            background: #00c6a9; cursor: pointer;"> Go to the Contact us </button>
+             <button type="submit" class="variables_button">
+                 <h1 class="submit_text"> Go to the Contact us </h1>
+             </button>
          </form>
 
      </div>
