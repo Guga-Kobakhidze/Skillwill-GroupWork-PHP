@@ -34,7 +34,7 @@
                     <div class="form-row ">
                         <div class="form-group col-lg-4">
                             <label for="inputPatientName"> Patient Name </label>
-                            <input name="name" type="text" class="form-control" id="inputPatientName" placeholder="">
+                            <input name="name" type="text" class="form-control" id="inputPatientName" placeholder="" required>
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="inputDoctorName"> Doctor's Name </label>
